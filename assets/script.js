@@ -9,18 +9,32 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
-  //function passwordLength(){
 
+  }
+
+  function passwordLength(){
+     window.prompt("Please type in Password Character Length (must be no less than 8 characters and no more than 128 characters):");
+  }
+
+  function upperCaseChar(){
+    window.confirm("Accept Uppercase Characters?");
+  }
+
+  function lowerCaseChar(){
+    window.confirm("Accept Lowercase Characters?");
+  }
+
+  function numericChar{
+    window.confirm("Accept Numeric Characters?");
+  }
+
+  function specialChar(){
+    window.confirm("Accept Special Characters?");
   }
 
   function generatePassword(){
-      passwordLength = prompt("Please type in Password Character Length (must be no less than 8 characters and no more than 128 characters):");
-      upperCaseChar = confirm("Accept Uppercase Characters?");
-      lowerCaseChar = confirm("Accept Lowercase Characters?");
-      numericChar = confirm("Accept Numeric Characters?");
-      specialChar = confirm("Accept Special Characters?");
+
   }
-  
   passwordText.value = password;
   
  
